@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+<style name="profile" parent="Base.Theme.AppCompat">
+
+    <item name="android:cropToPadding">true</item>
+    <item name="android:fitsSystemWindows">true</item>
+    <item name="android:scaleType">fitXY</item>
+</style>
+
+
+</resources>

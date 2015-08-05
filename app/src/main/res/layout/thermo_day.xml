@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/menu"
+        android:layout_alignStart="@+id/menu"
+        android:layout_marginTop="225dp" />
+
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_action_assignment"
+        android:background="@drawable/round_button"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:id="@+id/menu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="8dp" />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_file_folder_shared"
+        android:id="@+id/retur"
+        android:background="@drawable/round_button"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="8dp" />
+
+
+
+</RelativeLayout>
