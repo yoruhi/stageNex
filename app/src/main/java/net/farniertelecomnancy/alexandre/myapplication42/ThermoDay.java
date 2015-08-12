@@ -44,6 +44,7 @@ public class    ThermoDay extends Fragment {
 
 
                 Intent intent = new Intent(getActivity(),ThermoGraphHisto.class);
+                getActivity().finish();
                 startActivity(intent);
                 //Toast.makeText(getActivity(), "Hello World", Toast.LENGTH_SHORT).show();
 
@@ -58,6 +59,7 @@ public class    ThermoDay extends Fragment {
 
 
             Intent intent = new Intent(getActivity(),MainActivity.class);
+            getActivity().finish();
             startActivity(intent);
             //Toast.makeText(getActivity(), "Hello World", Toast.LENGTH_SHORT).show();
 

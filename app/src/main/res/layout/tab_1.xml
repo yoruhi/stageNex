@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
-    xmlns:card_view="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#fff">
 
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="310dp"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
         android:scrollbarStyle="insideInset"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="false"
         android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/view1"
         android:layout_alignBottom="@+id/view"
+        android:layout_marginBottom="72dp"
+        android:id="@+id/scrollView"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="72dp">
+        android:layout_alignParentEnd="true"/>
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="341dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            >
+            android:layout_alignBottom="@+id/scrollView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
             <android.support.v7.widget.CardView
                 android:id="@+id/cardview"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="80dp"
                 android:elevation="100dp"
                 fab:cardBackgroundColor="#ff1d5b90"
                 fab:cardCornerRadius="8dp"
@@ -42,8 +45,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="5dp">
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="16dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -54,7 +57,7 @@
             <android.support.v7.widget.CardView
 
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="80dp"
                 android:elevation="100dp"
                 fab:cardBackgroundColor="#ff1d5b90"
                 fab:cardCornerRadius="8dp"
@@ -80,7 +83,7 @@
             <android.support.v7.widget.CardView
 
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="80dp"
                 android:elevation="100dp"
                 fab:cardBackgroundColor="#ff1d5b90"
                 fab:cardCornerRadius="8dp"
@@ -107,7 +110,7 @@
             <android.support.v7.widget.CardView
 
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="80dp"
                 android:elevation="100dp"
                 fab:cardBackgroundColor="#ff1d5b90"
                 fab:cardCornerRadius="8dp"
@@ -129,59 +132,57 @@
                     android:text="My Scale day"
                     android:textColor="#000"/>
             </android.support.v7.widget.CardView>
+
         </LinearLayout>
-    </ScrollView>
+
     <com.github.clans.fab.FloatingActionMenu
         android:layout_width="@dimen/fab_size_normal"
         android:layout_height="@dimen/fab_size_normal"
-        fab:menu_fab_size="mini"
+        fab:menu_fab_size="normal"
         fab:menu_icon="@drawable/ic_action_perm_identity"
         fab:menu_colorNormal="#ff00a5d1"
         android:id="@+id/view2"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_alignParentBottom="true">
 
 
-        <com.github.clans.fab.FloatingActionButton
-            android:layout_width="@dimen/fab_size_mini"
-            android:layout_height="@dimen/fab_size_mini"
 
-            android:id="@+id/pro5"
-            android:scaleType="centerInside"/>
+
 
         <com.github.clans.fab.FloatingActionButton
-            android:layout_width="@dimen/fab_size_mini"
-            android:layout_height="@dimen/fab_size_mini"
-            fab:fab_size="mini"
-            android:src="@drawable/morpheus"
-            android:id="@+id/pro3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab"
+            fab:fab_label="Billie"
+
             />
         <com.github.clans.fab.FloatingActionButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:id="@+id/fab1"
+            fab:fab_label="Mollie"
+            />
         <com.github.clans.fab.FloatingActionButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:id="@+id/fab2"
+            fab:fab_label="Rollie"/>
         <com.github.clans.fab.FloatingActionButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:id="@+id/fab3"
+            fab:fab_label="Hollie"/>
         <com.github.clans.fab.FloatingActionButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <com.github.clans.fab.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:id="@+id/fab4"
+            fab:fab_label="42"/>
 
 
 
-
-
-
-
-        </com.github.clans.fab.FloatingActionMenu>
-
-
+    </com.github.clans.fab.FloatingActionMenu>
 
 
     <com.github.clans.fab.FloatingActionMenu
@@ -197,8 +198,34 @@
         <com.github.clans.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/floating"
+            android:id="@+id/fab5"
+            fab:fab_label=""
+
             />
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab6"
+            fab:fab_label="BpM"
+
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab7"
+            fab:fab_label="Oxy"
+
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab8"
+            fab:fab_colorNormal="#dd1207ad"
+            fab:fab_label="Scale"
+
+
+            />
+
 
 
 
@@ -209,29 +236,36 @@
         android:layout_height="@dimen/fab_size_mini"
         fab:menu_colorNormal="#ff00a5d1"
         fab:menu_icon="@drawable/ic_settings_black_48dp"
-        fab:menu_fab_size="mini"
+        fab:menu_fab_size="normal"
         android:id="@+id/view1"
-
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp">
 
         <com.github.clans.fab.FloatingActionButton
             android:layout_width="56dp"
-            android:layout_height="56dp"/>
+            android:layout_height="56dp"
+            android:id="@+id/fab9"
+            />
+
         <com.github.clans.fab.FloatingActionButton
             android:layout_width="56dp"
-            android:layout_height="56dp"/>
+            android:layout_height="56dp"
+            android:id="@+id/fab10"
+            fab:fab_label="FindMe"
+            />
+
         <com.github.clans.fab.FloatingActionButton
-            android:layout_width="56dp"
-            android:layout_height="56dp"/>
+            android:layout_width="79dp"
+            android:layout_height="89dp"
+            android:id="@+id/fab11"
+            fab:fab_label="Social"
+            />
 
 
 
     </com.github.clans.fab.FloatingActionMenu>
-
-
-
 
 
 </RelativeLayout>

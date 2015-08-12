@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-import com.getbase.floatingactionbutton.FloatingActionsMenu;
+
 import com.github.clans.fab.FloatingActionButton;
 
 /**
@@ -26,7 +26,7 @@ public class ThermoGraph extends ActionBarActivity {
     ImageView imageView;
     RoundImage roundImage;
     FloatingActionButton FAB;
-    FloatingActionsMenu menu;
+
 
 
     @Override

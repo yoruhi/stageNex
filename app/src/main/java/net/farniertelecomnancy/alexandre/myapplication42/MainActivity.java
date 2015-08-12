@@ -13,9 +13,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.getbase.floatingactionbutton.FloatingActionsMenu;
-import com.github.clans.fab.FloatingActionButton;
-import com.github.clans.fab.FloatingActionMenu;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -30,17 +27,18 @@ public class MainActivity extends ActionBarActivity {
     int Numboftabs =4;
     ImageView imageView;
     RoundImage roundImage;
-    FloatingActionButton FAB;
-    FloatingActionsMenu menu;
+
 
 
 
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_activity);
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.main_activity);
+
+
 
 
 
@@ -48,7 +46,7 @@ public class MainActivity extends ActionBarActivity {
 
        //put the pictures profile in a circle
         imageView = (ImageView) findViewById(R.id.imageView);
-        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.morpheus);
+        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.male3);
         roundImage = new RoundImage(bm);
         imageView.setImageDrawable(roundImage);
 

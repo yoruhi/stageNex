@@ -24,6 +24,7 @@ public class Tab2 extends Fragment {
 
 
                 Intent intent = new Intent(getActivity(),ThermoGraph.class);
+                getActivity().finish();
                 startActivity(intent);
                 /*Toast.makeText(getActivity(), "Hello World", Toast.LENGTH_SHORT).show();*/
 
