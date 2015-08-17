@@ -1,78 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vieww"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff">
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="fill_parent"
         android:layout_height="300dp"
-        android:scrollbarStyle="insideInset"
+        android:layout_alignBottom="@+id/view"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentStart="false"
         android:layout_alignParentTop="true"
-        android:layout_alignBottom="@+id/view"
         android:layout_marginBottom="72dp"
-        android:id="@+id/scrollView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:scrollbarStyle="insideInset"/>
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_alignBottom="@+id/scrollView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true">
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
             <android.support.v7.widget.CardView
                 android:id="@+id/cardview"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:elevation="100dp"
-                fab:cardBackgroundColor="#ff1d5b90"
-                fab:cardCornerRadius="8dp"
-                android:clickable="true"
-
-
-                fab:contentPadding="5dp"
-
-                android:layout_alignParentTop="true"
+                android:layout_height="90dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginRight="16dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="My Termo day"
-                    android:textColor="#000"/>
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:elevation="100dp"
+                fab:cardCornerRadius="8dp"
+                >
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/cardview_background">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Termo day"
+                        android:textColor="#000"
+
+
+                        android:padding="5dp" />
+
+                </RelativeLayout>
+
+
+
+
             </android.support.v7.widget.CardView>
+
+
 
             <android.support.v7.widget.CardView
 
+                android:id="@+id/view3"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cardview"
+                
+
+
+                android:layout_marginLeft="1dp"
+
+
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
                 android:elevation="100dp"
                 fab:cardBackgroundColor="#ff1d5b90"
                 fab:cardCornerRadius="8dp"
-                android:clickable="true"
-
-
                 fab:contentPadding="5dp"
 
-                android:layout_marginTop="7dp"
-                android:layout_below="@+id/cardview"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:id="@+id/view3">
+
+                >
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -80,27 +100,31 @@
                     android:textColor="#000"/>
             </android.support.v7.widget.CardView>
 
+
             <android.support.v7.widget.CardView
 
+                android:id="@+id/view4"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="90dp"
+                android:layout_alignLeft="@+id/view3"
+                android:layout_alignStart="@+id/view3"
+                android:layout_below="@+id/view3"
+
+
+
+
+                android:layout_marginLeft="1dp"
+
+
+                android:layout_marginRight="1dp"
+
+                android:layout_marginTop="1dp"
+                android:clickable="true"
                 android:elevation="100dp"
                 fab:cardBackgroundColor="#ff1d5b90"
                 fab:cardCornerRadius="8dp"
-                android:clickable="true"
-
-
                 fab:contentPadding="5dp"
-
-
-                android:layout_below="@+id/view3"
-                android:layout_marginTop="13dp"
-                android:layout_marginRight="16dp"
-
-                android:layout_alignLeft="@+id/view3"
-                android:layout_alignStart="@+id/view3"
-                android:id="@+id/view4"
-                android:layout_marginLeft="16dp">
+                >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -110,22 +134,22 @@
             <android.support.v7.widget.CardView
 
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="90dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view4"
+                android:layout_marginLeft="1dp"
+
+
+                android:layout_marginRight="1dp"
+
+
+                android:layout_marginTop="1dp"
+                android:clickable="true"
                 android:elevation="100dp"
                 fab:cardBackgroundColor="#ff1d5b90"
                 fab:cardCornerRadius="8dp"
-                android:clickable="true"
-
-
-                fab:contentPadding="5dp"
-
-
-                android:layout_below="@+id/view4"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginRight="16dp">
+                fab:contentPadding="5dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -133,52 +157,57 @@
                     android:textColor="#000"/>
             </android.support.v7.widget.CardView>
 
+
         </LinearLayout>
 
     <com.github.clans.fab.FloatingActionMenu
-        android:layout_width="@dimen/fab_size_normal"
+        android:id="@+id/floatingmenu"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/fab_size_normal"
-        fab:menu_fab_size="normal"
-        fab:menu_icon="@drawable/ic_action_perm_identity"
-        fab:menu_colorNormal="#ff00a5d1"
-        android:id="@+id/view2"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="13dp"
-        android:layout_alignParentBottom="true">
-
-
-
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_colorNormal="#fd0001"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/profile"
+        fab:menu_labels_colorNormal="#ccffffff"
+        fab:menu_labels_cornerRadius="20dp"
+        fab:menu_labels_position="right"
+        fab:menu_labels_textColor="#000">
 
 
         <com.github.clans.fab.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/fab"
-            fab:fab_label="Billie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_label="Eve"
 
             />
         <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/fab1"
-            fab:fab_label="Mollie"
+            fab:fab_label="Celestine"
+
+
+
             />
         <com.github.clans.fab.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/fab2"
-            fab:fab_label="Rollie"/>
-        <com.github.clans.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            fab:fab_label="François"/>
+        <com.github.clans.fab.FloatingActionButton
             android:id="@+id/fab3"
-            fab:fab_label="Hollie"/>
-        <com.github.clans.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            fab:fab_label="Raymond"/>
+        <com.github.clans.fab.FloatingActionButton
             android:id="@+id/fab4"
-            fab:fab_label="42"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_label="Alexis"/>
 
 
 
@@ -186,42 +215,45 @@
 
 
     <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/view"
         android:layout_width="@dimen/fab_size_normal"
         android:layout_height="@dimen/fab_size_normal"
-        fab:menu_icon="@drawable/ic_healing_black_24dp"
-        fab:menu_colorNormal="#fff43a12"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
         android:layout_centerHorizontal="true"
-        android:id="@+id/view"
+
+        fab:menu_colorNormal="#fd0001"
+        fab:menu_icon="@drawable/red_cross_round_red"
         >
 
         <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/fab5"
             fab:fab_label=""
+
 
             />
         <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/fab6"
             fab:fab_label="BpM"
 
             />
         <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/fab7"
             fab:fab_label="Oxy"
 
             />
         <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/fab8"
-            fab:fab_colorNormal="#dd1207ad"
             fab:fab_label="Scale"
+
 
 
             />
@@ -232,35 +264,39 @@
     </com.github.clans.fab.FloatingActionMenu>
 
     <com.github.clans.fab.FloatingActionMenu
-        android:layout_width="@dimen/fab_size_mini"
+        android:id="@+id/floatingmenu1"
+        android:layout_width="fill_parent"
         android:layout_height="@dimen/fab_size_mini"
-        fab:menu_colorNormal="#ff00a5d1"
-        fab:menu_icon="@drawable/ic_settings_black_48dp"
-        fab:menu_fab_size="normal"
-        android:id="@+id/view1"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="13dp">
+        android:layout_alignParentRight="true"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_colorNormal="#fd0001"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/settings2"
+        fab:menu_labels_colorNormal="#ccffffff"
+        fab:menu_labels_cornerRadius="20dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_textColor="#000"
+
+        >
 
         <com.github.clans.fab.FloatingActionButton
-            android:layout_width="56dp"
-            android:layout_height="56dp"
             android:id="@+id/fab9"
-            />
-
-        <com.github.clans.fab.FloatingActionButton
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:id="@+id/fab10"
-            fab:fab_label="FindMe"
             />
 
         <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab10"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab11"
             android:layout_width="79dp"
             android:layout_height="89dp"
-            android:id="@+id/fab11"
-            fab:fab_label="Social"
             />
 
 
